@@ -23841,12 +23841,6 @@ input[readonly] {
     height: 39px;
     bottom: -48px;
     left: calc(50% - 117px); }
-  .section[data-con="bestseller"] .section-title p {
-    position: relative;
-    z-index: 5; }
-  .section[data-con="bestseller"] .section-title span {
-    position: relative;
-    z-index: 1; }
 
 .section[data-con="farmer"] {
   background: url("../images/farmer-bg.svg") no-repeat;
@@ -23955,13 +23949,18 @@ input[readonly] {
     font-weight: 500;
     margin-bottom: -24px;
     letter-spacing: 0;
-    font-size: 56px; }
+    font-size: 56px;
+    position: relative;
+    z-index: 1; }
     @media (max-width: 1200px) {
       .section-title span {
         line-height: 1; } }
     @media (max-width: 768px) {
       .section-title span {
         font-size: 48px; } }
+  .section-title p {
+    position: relative;
+    z-index: 5; }
 
 @media (max-width: 768px) {
   .main-list[data-size="lg"] .main-list-btn img {
