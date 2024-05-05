@@ -23046,9 +23046,6 @@ input[readonly] {
   @media (max-width: 1200px) {
     .main {
       margin-top: 56px; } }
-  @media (max-width: 991px) {
-    .main {
-      margin-top: 54px; } }
 
 /*--------------------主選單開始------------------*/
 .navbar {
@@ -23847,6 +23844,9 @@ input[readonly] {
   .section[data-con="bestseller"] .section-title p {
     position: relative;
     z-index: 5; }
+  .section[data-con="bestseller"] .section-title span {
+    position: relative;
+    z-index: 1; }
 
 .section[data-con="farmer"] {
   background: url("../images/farmer-bg.svg") no-repeat;
