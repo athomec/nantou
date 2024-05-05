@@ -1,0 +1,10 @@
+<svg id="ic-fb" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56.485" height="56.484" viewBox="0 0 56.485 56.484">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_22" data-name="Rectangle 22" width="56.485" height="56.484" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Group_22" data-name="Group 22" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <path id="Path_30" data-name="Path 30" d="M36.895,17.213H31.528c-.638,0-1.345.833-1.345,1.949v3.88h6.712v5.522H30.183V45.151H23.848V28.565H18.1V23.043h5.744V19.792c0-4.668,3.237-8.45,7.68-8.45h5.367ZM28.243,0A28.242,28.242,0,1,0,56.485,28.245,28.249,28.249,0,0,0,28.243,0" transform="translate(0 0)" fill="#fff"/>
+  </g>
+</svg>

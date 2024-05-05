@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63" height="52" viewBox="0 0 63 52">
+  <g id="ic-speaker" transform="translate(-83 -617)">
+    <g id="拡声器のアイコンその4" transform="translate(60.759 554.511) rotate(-16)">
+      <path id="Path_8" data-name="Path 8" d="M70.765,322.2a3.77,3.77,0,0,1-1.5,1.7,3.411,3.411,0,0,1-.813.349l-.917-3.391H61.015l2.272,11.474a1.5,1.5,0,0,0,1.468,1.206h4.251a1.5,1.5,0,0,0,1.447-1.888l-1.59-5.872c.122-.034.246-.073.37-.119a5.154,5.154,0,0,0,2.366-1.78,6.317,6.317,0,0,0,1.085-2.488c-.5-.1-1.023-.182-1.564-.259A5.21,5.21,0,0,1,70.765,322.2Z" transform="translate(-54.101 -214.23)" fill="#333"/>
+      <path id="Path_9" data-name="Path 9" d="M116.717,79.25c-1.2,0-3.125,2.042-3.958,2.874-.722.722-6.415,6.387-20.853,6.387V105.4c14.438,0,20.131,5.664,20.853,6.389.832.83,2.76,2.872,3.958,2.872a2.167,2.167,0,0,0,2.166-2.166V81.416A2.167,2.167,0,0,0,116.717,79.25Z" transform="translate(-81.491)" fill="#333"/>
+      <path id="Path_10" data-name="Path 10" d="M8.444,160.969a8.444,8.444,0,1,0,0,16.889Z" transform="translate(0 -72.458)" fill="#333"/>
+      <path id="Path_11" data-name="Path 11" d="M345.375,207.516v6.339a3.17,3.17,0,0,0,0-6.339Z" transform="translate(-306.236 -113.73)" fill="#333"/>
+      <rect id="Rectangle_8" data-name="Rectangle 8" width="8.531" height="1.656" transform="translate(49.491 95.907)" fill="#333"/>
+      <path id="Path_12" data-name="Path 12" d="M426.418,116.77l-.889-1.4-7.763,4.947.892,1.4Z" transform="translate(-370.423 -32.031)" fill="#333"/>
+      <path id="Path_13" data-name="Path 13" d="M417.766,303.145l7.763,4.949.889-1.4-7.759-4.947Z" transform="translate(-370.423 -197.285)" fill="#333"/>
+    </g>
+    <rect id="Rectangle_394" data-name="Rectangle 394" width="63" height="52" transform="translate(83 617)" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <title>南投尚青</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="南投尚青,南投農,南投農業">
+    <meta name="description" content="南投尚青" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta property="og:site_name" content="image.png" />
+    <meta property="og:image" content="assets/images/fb-img.png" />
+    <!--分享設定-->
+    <link rel="icon" href="assets/images/favicon.png" type="image/ico" />
+    <!--iconfont設定-->
+    <link rel="stylesheet" href="assets/style/all.css">
+    <!--css設定-->
+</head>
+
+	<body>
+		<!--主選單內容開始-->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="menu">
+    <div class="offcanvas-header">
+        <button class="btn btn-gray-900 rounded-pill text-white d-flex align-items-center ms-auto" data-bs-dismiss="offcanvas" title="收合選單">
+            <img src="./assets/images/ic-menu-close.svg" alt="menu" class="me-2"> BACK
+        </button>
+    </div>
+    <div class="offcanvas-body scrollbar">
+        <div class="row menu-list g-4 g-lg-6">
+            <div class="col-12 d-flex d-lg-none">
+                <ul class="navbar-nav w-100 flex-row flex-wrap flex-md-nowrap">
+                    <li class="nav-item">
+                        <div class="input-group nav-item-search">
+                            <input type="text" class="form-control" placeholder="請輸入關鍵字" title="請輸入關鍵字">
+                            <button class="btn" type="button" id="search" title="搜尋" onclick="location.href='result.html'">
+                                <img src="./assets/images/ic-search.svg" accesskey="S" alt="搜尋 icon">
+                            </button>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sitemap.html" title="網頁導覽">網頁導覽</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" title="會員專區" class="nav-link d-flex "
+                            data-bs-toggle="collapse">
+                            <img src="./assets/images/ic-user.svg" alt="會員專區" class="me-1">
+                            <p>會員註冊/登入</p>
+                        </a>
+                        <div class="nav-link d-none">
+                            <img src="./assets/images/ic-user.svg" alt="會員專區" class="me-1">
+                            <p class="me-2 me-xl-3">agnvke125，您好</p>
+                            <a class="link-primary ms-auto" href="#" title="登出" data-con="logout">登出</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-lg-5">
+                <h2 class="menu-list-title">關於本網</h2>
+                <ul>
+                    <li><a class="menu-list-link" href="about.html" title="簡介">簡介</a></li>
+                    <li><a class="menu-list-link" href="about.html" title="聯絡資訊">聯絡資訊</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-lg-5">
+                <h2 class="menu-list-title">青農報報</h2>
+                <ul>
+                    <li><a class="menu-list-link" href="#" title="簡介">簡介</a></li>
+                    <li><a class="menu-list-link" href="#" title="聯絡資訊">聯絡資訊</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-lg-5">
+                <h2 class="menu-list-title">成果展示</h2>
+                <ul>
+                    <li><a class="menu-list-link" href="#" title="簡介">簡介</a></li>
+                    <li><a class="menu-list-link" href="#" title="聯絡資訊">聯絡資訊</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-lg-5">
+                <h2 class="menu-list-title">青農專區</h2>
+                <ul>
+                    <li><a class="menu-list-link" href="#" title="簡介">簡介</a></li>
+                    <li><a class="menu-list-link" href="#" title="聯絡資訊">聯絡資訊</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-lg-5">
+                <h2 class="menu-list-title">重點產物</h2>
+                <ul>
+                    <li><a class="menu-list-link" href="#" title="簡介">簡介</a></li>
+                    <li><a class="menu-list-link" href="#" title="聯絡資訊">聯絡資訊</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-lg-5">
+                <h2 class="menu-list-title">青農聯誼會</h2>
+                <ul>
+                    <li><a class="menu-list-link" href="#" title="簡介">簡介</a></li>
+                    <li><a class="menu-list-link" href="#" title="聯絡資訊">聯絡資訊</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-lg-5">
+                <h2 class="menu-list-title">務農課程</h2>
+                <ul>
+                    <li><a class="menu-list-link" href="#" title="簡介">簡介</a></li>
+                    <li><a class="menu-list-link" href="#" title="聯絡資訊">聯絡資訊</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-lg-5">
+                <h2 class="menu-list-title">內容範本</h2>
+                <ul>
+                    <li><a class="menu-list-link" href="#" title="簡介">簡介</a></li>
+                    <li><a class="menu-list-link" href="#" title="聯絡資訊">聯絡資訊</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-lg-5">
+                <h2 class="menu-list-title">詢價單</h2>
+                <ul>
+                    <li><a class="menu-list-link" href="#" title="簡介">簡介</a></li>
+                    <li><a class="menu-list-link" href="#" title="聯絡資訊">聯絡資訊</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-lg-5">
+                <h2 class="menu-list-title">青農地圖</h2>
+                <ul>
+                    <li><a class="menu-list-link" href="#" title="簡介">簡介</a></li>
+                    <li><a class="menu-list-link" href="#" title="聯絡資訊">聯絡資訊</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-lg-5">
+                <h2 class="menu-list-title">青農報報</h2>
+                <ul>
+                    <li><a class="menu-list-link" href="#" title="簡介">簡介</a></li>
+                    <li><a class="menu-list-link" href="#" title="聯絡資訊">聯絡資訊</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-lg-5">
+                <h2 class="menu-list-title">成果展示</h2>
+                <ul>
+                    <li><a class="menu-list-link" href="#" title="簡介">簡介</a></li>
+                    <li><a class="menu-list-link" href="#" title="聯絡資訊">聯絡資訊</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+		<noscript>
+			<div class="container">
+				<div class="d-flex justify-content-center bg-gray-100 rounded p-4 text-primary border border-primary mt-6">
+					很抱歉，網站的某些功能在JavaScript沒有啟用的狀態下無法正常使用。
+				</div>
+			</div>
+		</noscript>
+		<!--頁面開始-->
+		<div class="wrapper">
+			<!--主選單開始-->
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top js-nav py-2 py-lg-0">
+        <a href="#Accesskey_C" id="gotocenter" title="移到主要內容">移到主要內容</a>
+        <a href="#Accesskey_U" class="key" id="Accesskey_U" accesskey="U" title="上方選單連結區，此區塊列有本網站的主要連結">:::</a>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" title="南投尚青">
+                <h1 class="mb-0 font-xs white">
+                    高雄市民服務平台
+                </h1>
+            </a>
+            <ul class="navbar-nav ms-auto d-none d-lg-flex">
+                <li class="nav-item">
+                    <div class="input-group nav-item-search">
+                        <input type="text" class="form-control" placeholder="請輸入關鍵字" title="請輸入關鍵字">
+                        <button class="btn" type="button" id="search" title="搜尋" onclick="location.href='result.html'">
+                            <img src="./assets/images/ic-search.svg" accesskey="S" alt="搜尋 icon">
+                        </button>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sitemap.html" title="網頁導覽">網頁導覽</a>
+                </li>
+                <li class="nav-item px-2 px-xl-4">
+                    <p class="ms-auto me-2 fw-medium">字級</p>
+                    <ul class="top-function-list js-top-function" role="tablist">
+                        <li class="top-function-list-item">
+                            <button class="btn js-font-lg" data-bs-toggle="pill" title="大">大</button>
+                        </li>
+                        <li class="top-function-list-item">
+                            <button class="btn js-font-md active" data-bs-toggle="pill" title="中">中</button>
+                        </li>
+                        <li class="top-function-list-item">
+                            <button class="btn js-font-sm" data-bs-toggle="pill" title="小">小</button>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" title="會員專區" class="nav-link d-flex " data-bs-toggle="collapse">
+                        <img src="./assets/images/ic-user.svg" alt="會員專區" class="me-1">
+                        <p>會員註冊/登入</p>
+                    </a>
+                    <div class="nav-link d-none">
+                        <img src="./assets/images/ic-user.svg" alt="會員專區" class="me-1">
+                        <p class="me-2 me-xl-3">agnvke125，您好</p>
+                        <a class="link-primary ms-auto" href="#" title="登出" data-con="logout">登出</a>
+                    </div>
+                </li>
+            </ul>
+            <button class="btn btn-primary rounded-pill text-white d-flex align-items-center js-menu-toggler" data-bs-toggle="offcanvas"
+                data-bs-target="#menu" title="展開選單">
+                <img src="./assets/images/ic-menu.svg" alt="menu" class="me-2"> MENU
+            </button>
+        </div>
+    </nav>
+</header>
+<!--主選單結束-->
+				<a href="#Accesskey_C" class="key position-absolute" id="Accesskey_C" accesskey="C"
+					title="網頁主要內容資料區">:::</a>					
+				<!--內容區塊開始-->
+<main class="main bg-white">
+	<div id="main-slide" class="main-slide carousel slide container-fluid">
+		<img src="./assets/images/scroll-down.svg" alt="scroll-down" class="main-slide-scroll">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#main-slide" data-bs-slide-to="0" class="active"
+				title="Slide 1"></button>
+			<button type="button" data-bs-target="#main-slide" data-bs-slide-to="1" title="Slide 2"></button>
+			<button type="button" data-bs-target="#main-slide" data-bs-slide-to="2" title="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="./assets/images/banner1.jpg" class="d-block w-100" alt="banner1">
+			</div>
+			<div class="carousel-item">
+				<img src="./assets/images/banner1.jpg" class="d-block w-100" alt="banner1">
+			</div>
+			<div class="carousel-item">
+				<img src="./assets/images/banner1.jpg" class="d-block w-100" alt="banner1">
+			</div>
+		</div>
+		<button class="carousel-control-prev slide-btn" type="button" data-bs-target="#main-slide" data-bs-slide="prev"
+			title="下一張">
+			<img src="./assets/images/ic-prev.svg" alt="prev">
+		</button>
+		<button class="carousel-control-next slide-btn" type="button" data-bs-target="#main-slide" data-bs-slide="next"
+			title="下一張">
+			<img src="./assets/images/ic-next.svg" alt="next">
+		</button>
+	</div>
+
+	<div class="marquee container-fluid">
+		<img src="./assets/images/ic-speaker.svg" alt="圖示" class="me-3 me-lg-4">
+		<marquee direction="left" class="px-3 py-1 py-lg-2">
+			氣候變遷衝擊下，極端溫度事件導致民眾受熱傷害危害極深，讓我們瞭解氣候變遷對人體影響、熱傷害種類、成因及常見症狀，預防熱傷害發生吧！
+		</marquee>
+	</div>
+
+	<div class="section pt-4 pt-lg-6 mb-6" data-con="news">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 d-flex flex-column align-items-center">
+					<h2 class="section-title mb-4">
+						<p>最新資訊</p><span>NEWS</span>
+					</h2>
+					<img src="./assets/images/news-pic.png" alt="最新資訊" class="section-pic">
+				</div>
+				<div class="col-lg-9">
+					<ul class="tag-list mb-3">
+						<li class="tag-list-item">
+							<a href="#" class="tag-list-link" title="為防治嚴重特殊傳染性肺炎，參加集會活動請全程佩戴口罩並遵守飲食規定">
+								<span>2024.10.10</span>
+								<p>為防治嚴重特殊傳染性肺炎，參加集會活動請全程佩戴口罩並遵守飲食規定</p>
+								<div class="tag-list-go"><img src="./assets/images/ic-next.svg" alt="點選圖示"></div>
+							</a>
+						</li>
+						<li class="tag-list-item">
+							<a href="#" class="tag-list-link" title="為防治嚴重特殊傳染性肺炎，參加集會活動請全程佩戴口罩並遵守飲食規定">
+								<span>2024.10.10</span>
+								<p>為防治嚴重特殊傳染性肺炎，參加集會活動請全程佩戴口罩並遵守飲食規定</p>
+								<div class="tag-list-go"><img src="./assets/images/ic-next.svg" alt="點選圖示"></div>
+							</a>
+						</li>
+						<li class="tag-list-item">
+							<a href="#" class="tag-list-link" title="為防治嚴重特殊傳染性肺炎，參加集會活動請全程佩戴口罩並遵守飲食規定">
+								<span>2024.10.10</span>
+								<p>為防治嚴重特殊傳染性肺炎，參加集會活動請全程佩戴口罩並遵守飲食規定</p>
+								<div class="tag-list-go"><img src="./assets/images/ic-next.svg" alt="點選圖示"></div>
+							</a>
+						</li>
+						<li class="tag-list-item">
+							<a href="#" class="tag-list-link" title="為防治嚴重特殊傳染性肺炎，參加集會活動請全程佩戴口罩並遵守飲食規定">
+								<span>2024.10.10</span>
+								<p>為防治嚴重特殊傳染性肺炎，參加集會活動請全程佩戴口罩並遵守飲食規定</p>
+								<div class="tag-list-go"><img src="./assets/images/ic-next.svg" alt="點選圖示"></div>
+							</a>
+						</li>
+						<li class="tag-list-item">
+							<a href="#" class="tag-list-link" title="為防治嚴重特殊傳染性肺炎，參加集會活動請全程佩戴口罩並遵守飲食規定">
+								<span>2024.10.10</span>
+								<p>為防治嚴重特殊傳染性肺炎，參加集會活動請全程佩戴口罩並遵守飲食規定</p>
+								<div class="tag-list-go"><img src="./assets/images/ic-next.svg" alt="點選圖示"></div>
+							</a>
+						</li>
+					</ul>
+					<a href="#" class="more-link" title="more">more</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<section class="section container-fluid" data-con="bestseller">
+		<div class="container-fluid">
+			<div class="section-header">
+				<img src="./assets/images/leader-pic.jpg" alt="縣長照片" class="me-2">
+				<h2 class="section-title mb-5">
+					<p>縣長每月一推</p><span>BESTSELLER</span>
+				</h2>
+			</div>
+		</div>
+		<div class="theme-card g-4 js-theme-card">
+			<div>
+				<a href="#" class="theme-card-item" title="信手拈茶-茉莉綠茶袋茶">
+					<div class="theme-card-tag">
+						<div class="theme-card-locate"><img src="./assets/images/ic-locate.svg" alt="icon">草屯鎮</div>
+						<div class="theme-card-info">南投縣農會</div>
+					</div>
+					<div class="theme-card-img"><img src="./assets/images/demo-p1.jpg" alt="照片"></div>
+					<h3 class="theme-card-title">信手拈茶-茉莉綠茶袋茶</h3>
+					<p class="theme-card-txt">榮獲2018年南投十大伴手禮。
+						清逸的茶香與茉莉甜美的花香層次流轉，先於茶香中品嚐茉莉花散發出天然花香，茶引花香，花香中品嚐茶香茶韻先於茶香中品嚐，茶引花香，花香中品嚐茶香茶韻。</p>
+					<div class="more-link">more</div>
+				</a>
+			</div>
+			<div>
+				<a href="#" class="theme-card-item" title="信手拈茶-茉莉綠茶袋茶">
+					<div class="theme-card-tag">
+						<div class="theme-card-locate"><img src="./assets/images/ic-locate.svg" alt="icon">草屯鎮</div>
+						<div class="theme-card-info">南投縣農會</div>
+					</div>
+					<div class="theme-card-img"><img src="./assets/images/demo-p1.jpg" alt="照片"></div>
+					<h3 class="theme-card-title">信手拈茶-茉莉綠茶袋茶</h3>
+					<p class="theme-card-txt">榮獲2018年南投十大伴手禮。
+						清逸的茶香與茉莉甜美的花香層次流轉，先於茶香中品嚐茉莉花散發出天然花香，茶引花香，花香中品嚐茶香茶韻先於茶香中品嚐，茶引花香，花香中品嚐茶香茶韻。</p>
+					<div class="more-link">more</div>
+				</a>
+			</div>
+			<div>
+				<a href="#" class="theme-card-item" title="信手拈茶-茉莉綠茶袋茶">
+					<div class="theme-card-tag">
+						<div class="theme-card-locate"><img src="./assets/images/ic-locate.svg" alt="icon">草屯鎮</div>
+						<div class="theme-card-info">好穗成雙農產品初級 加工場</div>
+					</div>
+					<div class="theme-card-img"><img src="./assets/images/demo-p1.jpg" alt="照片"></div>
+					<h3 class="theme-card-title">信手拈茶-茉莉綠茶袋茶</h3>
+					<p class="theme-card-txt">榮獲2018年南投十大伴手禮。
+						清逸的茶香與茉莉甜美的花香層次流轉，先於茶香中品嚐茉莉花散發出天然花香，茶引花香，花香中品嚐茶香茶韻先於茶香中品嚐，茶引花香，花香中品嚐茶香茶韻。</p>
+					<div class="more-link">more</div>
+				</a>
+			</div>
+			<div>
+				<a href="#" class="theme-card-item" title="信手拈茶-茉莉綠茶袋茶">
+					<div class="theme-card-tag">
+						<div class="theme-card-locate"><img src="./assets/images/ic-locate.svg" alt="icon">草屯鎮</div>
+						<div class="theme-card-info">南投縣農會</div>
+					</div>
+					<div class="theme-card-img"><img src="./assets/images/demo-p1.jpg" alt="照片"></div>
+					<h3 class="theme-card-title">信手拈茶-茉莉綠茶袋茶</h3>
+					<p class="theme-card-txt">榮獲2018年南投十大伴手禮。
+						清逸的茶香與茉莉甜美的花香層次流轉，先於茶香中品嚐茉莉花散發出天然花香，茶引花香，花香中品嚐茶香茶韻先於茶香中品嚐，茶引花香，花香中品嚐茶香茶韻。</p>
+					<div class="more-link">more</div>
+				</a>
+			</div>
+			<div>
+				<a href="#" class="theme-card-item" title="信手拈茶-茉莉綠茶袋茶">
+					<div class="theme-card-tag">
+						<div class="theme-card-locate"><img src="./assets/images/ic-locate.svg" alt="icon">草屯鎮</div>
+						<div class="theme-card-info">南投縣農會</div>
+					</div>
+					<div class="theme-card-img"><img src="./assets/images/demo-p1.jpg" alt="照片"></div>
+					<h3 class="theme-card-title">信手拈茶-茉莉綠茶袋茶</h3>
+					<p class="theme-card-txt">榮獲2018年南投十大伴手禮。
+						清逸的茶香與茉莉甜美的花香層次流轉，先於茶香中品嚐茉莉花散發出天然花香，茶引花香，花香中品嚐茶香茶韻先於茶香中品嚐，茶引花香，花香中品嚐茶香茶韻。</p>
+					<div class="more-link">more</div>
+				</a>
+			</div>
+			<div>
+				<a href="#" class="theme-card-item" title="信手拈茶-茉莉綠茶袋茶">
+					<div class="theme-card-tag">
+						<div class="theme-card-locate"><img src="./assets/images/ic-locate.svg" alt="icon">草屯鎮</div>
+						<div class="theme-card-info">南投縣農會</div>
+					</div>
+					<div class="theme-card-img"><img src="./assets/images/demo-p1.jpg" alt="照片"></div>
+					<h3 class="theme-card-title">信手拈茶-茉莉綠茶袋茶</h3>
+					<p class="theme-card-txt">榮獲2018年南投十大伴手禮。
+						清逸的茶香與茉莉甜美的花香層次流轉，先於茶香中品嚐茉莉花散發出天然花香，茶引花香，花香中品嚐茶香茶韻先於茶香中品嚐，茶引花香，花香中品嚐茶香茶韻。</p>
+					<div class="more-link">more</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section" data-con="farmer">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-7">
+					<div class="section-header">
+						<img src="./assets/images/farmer-pic.svg" alt="農夫圖" class="me-2">
+						<h2 class="section-title mb-5">
+							<p>青農榮耀</p><span>FARMER GLORY</span>
+						</h2>
+					</div>
+					<div class="farmer-inner">
+						<h3 class="farmer-inner-title">崇尚自然落實有機</h3>
+						<p class="mb-2">
+							真桂自然農場為清華桂專業的生產園區，從育苗、栽種、採收、加工處理與清華桂系列商品的開發、運用及推廣皆具有高度的專業能力，除了投入心力栽培清華桂外，也致力於山胡椒(馬告)的栽培。威然建有150坪清華桂農產加工室，引進高壓水蒸氣萃取設備，成功的開發生產高純度及高品質的清華桂精油及純露；另安排體驗活動行程，讓遊客參加園區生態導覽、採收清華桂及精油萃取體驗，下次不妨和家人朋友預約來個芳香微旅行吧!
+						</p>
+						<a href="#" class="more-link" title="more">more</a>
+					</div>
+				</div>
+				<div class="col-md-7 col-lg-5">
+					<div id="farmer-slide" class="main-slide farmer-slide carousel slide px-5 px-md-0">
+						<div class="carousel-inner basic-shadow mb-3">
+							<div class="carousel-item active">
+								<img src="./assets/images/farmer1.jpg" class="d-block w-100" alt="farmer1">
+							</div>
+							<div class="carousel-item">
+								<img src="./assets/images/farmer1.jpg" class="d-block w-100" alt="farmer1">
+							</div>
+							<div class="carousel-item">
+								<img src="./assets/images/farmer1.jpg" class="d-block w-100" alt="farmer1">
+							</div>
+						</div>
+						<div class="d-flex align-items-center justify-content-center">
+							<div class="carousel-indicators me-3">
+								<button type="button" data-bs-target="#farmer-slide" data-bs-slide-to="0" class="active"
+									title="Slide 1"></button>
+								<button type="button" data-bs-target="#farmer-slide" data-bs-slide-to="1"
+									title="Slide 2"></button>
+								<button type="button" data-bs-target="#farmer-slide" data-bs-slide-to="2"
+									title="Slide 3"></button>
+							</div>
+							<button class="carousel-control-prev slide-btn me-3" type="button"
+								data-bs-target="#farmer-slide" data-bs-slide="prev" title="下一張">
+								<img src="./assets/images/ic-prev.svg" alt="prev">
+							</button>
+							<button class="carousel-control-next slide-btn" type="button" data-bs-target="#farmer-slide"
+								data-bs-slide="next" title="下一張">
+								<img src="./assets/images/ic-next.svg" alt="next">
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section" data-con="related">
+		<div class="container">
+			<h2 class="section-title">
+				<p>友站連結</p><span class="text-white">RELATED WEBSITES</span>
+			</h2>
+			<div class="related-card js-related-card">
+				<div>
+					<a href="#" target="_blank" class="related-card-item" title="鹿谷鄉農會(開新視窗)">
+						<img src="./assets/images/related1.jpg" alt="鹿谷鄉農會">
+					</a>
+				</div>
+				<div>
+					<a href="#" target="_blank" class="related-card-item" title="鹿谷鄉農會(開新視窗)">
+						<img src="./assets/images/related1.jpg" alt="鹿谷鄉農會">
+					</a>
+				</div>
+				<div>
+					<a href="#" target="_blank" class="related-card-item" title="鹿谷鄉農會(開新視窗)">
+						<img src="./assets/images/related1.jpg" alt="鹿谷鄉農會">
+					</a>
+				</div>
+				<div>
+					<a href="#" target="_blank" class="related-card-item" title="鹿谷鄉農會(開新視窗)">
+						<img src="./assets/images/related1.jpg" alt="鹿谷鄉農會">
+					</a>
+				</div>
+				<div>
+					<a href="#" target="_blank" class="related-card-item" title="鹿谷鄉農會(開新視窗)">
+						<img src="./assets/images/related1.jpg" alt="鹿谷鄉農會">
+					</a>
+				</div>
+				<div>
+					<a href="#" target="_blank" class="related-card-item" title="鹿谷鄉農會(開新視窗)">
+						<img src="./assets/images/related1.jpg" alt="鹿谷鄉農會">
+					</a>
+				</div>
+				<div>
+					<a href="#" target="_blank" class="related-card-item" title="鹿谷鄉農會(開新視窗)">
+						<img src="./assets/images/related1.jpg" alt="鹿谷鄉農會">
+					</a>
+				</div>
+				<div>
+					<a href="#" target="_blank" class="related-card-item" title="鹿谷鄉農會(開新視窗)">
+						<img src="./assets/images/related1.jpg" alt="鹿谷鄉農會">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+					<!--footer開始-->
+<footer class="footer" data-con="">
+    <div class="footer-function">
+        <a href="#" title="回到上方" class="footer-function-link mb-2 mb-md-3" data-con="top">TOP</a>
+        <a href="https://robot.kcg.gov.tw/wise/webchat/default/?t=oC56ls9rDQCvE6pSN%2B9i0w%3D%3D" target="_blank"
+            title="線上客服" class="footer-function-link" data-con="ai">線上客服</a>
+    </div>
+    <a href="#Accesskey_B" class="key" id="Accesskey_B" accesskey="B" title="下方相關資訊連結區">:::</a>
+
+    <div class="container">
+        <div class="footer-inner">
+            <img src="./assets/images/footer-logo.svg" alt="南投尚青" class="footer-logo me-3 mb-3 mb-xl-0">
+            <div class="me-xl-3 mb-3 mb-xl-0">
+                <ul class="footer-txt mb-4">
+                    <li class="footer-txt-item"><img src="./assets/images/ic-locaed-circle.svg" alt="icon" class="me-2">54001 南投縣南投市中興路660</li>
+                    <li class="footer-txt-item"><img src="./assets/images/ic-tel.svg" alt="icon" class="me-2">(049)2222106~9#1741</li>
+                    <li class="footer-txt-item"><img src="./assets/images/ic-support.svg" alt="icon" class="me-2">服務時間：8:30~17:30</li>
+                </ul>
+                <ul class="footer-info">
+                    <li class="footer-info-item mb-2">
+                        <button class="btn footer-info-link rounded-pill" title="隱私權及資訊安全政策">
+                            隱私權及資訊安全政策
+                        </button>
+                    </li>
+                    <li class="footer-info-item mb-2">
+                        <button class="btn footer-info-link rounded-pill" title="網站安全政策">
+                            網站安全政策
+                        </button>
+                    </li>
+                    <li class="footer-info-item mb-2">
+                        <button class="btn footer-info-link rounded-pill" title="隱私權及資訊安全政策">
+                            政府網站資料開放宣告
+                        </button>
+                    </li>
+                    <li class="ms-lg-auto mb-2 d-flex justify-content-center">
+                        <img src="./assets/images/demo-a.jpg" alt="A等級標章" style="max-width: 128px;">
+                    </li>
+                </ul>
+            </div>
+            <ul class="footer-others">
+                <li class="footer-others-item">
+                    <a href="#" target="_blank" class="footer-others-link" title="官方 FB 粉絲團(開新視窗)"><img src="./assets/images/ic-fb.svg" alt="FB"></a>
+                </li>
+                <li class="footer-others-item">
+                    <a href="#" target="_blank" class="footer-others-link" title="官方 IG (開新視窗)"><img src="./assets/images/ic-ig.svg" alt="IG"></a>
+                </li>
+                <li class="footer-others-item">
+                    <a href="#" target="_blank" class="footer-others-link" title="官方 Line (開新視窗)"><img src="./assets/images/ic-fb.svg" alt="Line"></a>
+                </li>
+            </ul>
+        </div>
+        
+
+    </div>
+</footer>
+<div class="bg-gray-900 text-white fs-8 text-center py-3 z-3 position-relative">
+    <div class="container">南投縣政府版權所有 Copyright © Nantou County Government. All rights reserved.</div>
+</div>
+<!--主選單結束-->
+
+		</div>
+		<!-- SCRIPTS -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src='assets/js/jquery-ui.min.js'></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/moment-with-locales.min.js"></script>
+<script src="assets/js/tempusdominus-bootstrap-4.js"></script>
+<script src="assets/js/select2.min.js"></script>
+<script src="assets/js/index.global.js"></script><!--行事曆-->
+<script src="assets/js/script.js"></script><!--自訂-->
+<script>
+    $(function () {
+        //首頁輪播
+        $('.js-theme-card').slick({
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            rows: 1,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        rows: 1,
+                        dots: true,
+                        arrows: false,
+                    }
+                }
+            ]
+        });
+        $('.js-related-card').slick({
+            speed: 300,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            rows: 1,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        rows: 1,
+                        dots: true,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        rows: 1,
+                        dots: true,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 485,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        rows: 1,
+                        dots: true,
+                        arrows: false,
+                    }
+                }
+            ]
+        });
+        //申辦服務輪播
+        $('.js-choose-service').slick({
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            rows: 2,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 2,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        rows: 3,
+                        dots: true
+                    }
+                }
+            ]
+        });
+        //預約輪播
+        RESIZE();
+
+        function RESIZE() {
+            WINDOWH = $(window).height();
+            WINDOW = $(window).width();
+            if (WINDOW < 769) {
+               $('.js-link-card-list').slick({
+                    speed: 300,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    rows: 3,
+                    dots: false,
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                rows: 1,
+                                dots: true
+                            }
+                        }
+                    ]
+                });
+            }
+        }
+
+        $(window).resize(function () {
+            RESIZE();
+        })
+
+        //下拉輸入選單
+        $('.js-input-select').select2();
+
+        //時間表單
+        var datetimepickerOptions = {
+            locale: 'zh-tw',
+            defaultDate: new Date(),
+            format: 'L',
+            icons: {
+                time: "bi bi-clock",
+                date: "bi bi-calendar",
+                up: "bi bi-arrow-up",
+                down: "bi bi-arrow-down",
+                previous: "bi bi-chevron-left",
+                next: "bi bi-chevron-right",
+                today: "bi bi-clock",
+                clear: "bi bi-trash3"
+            }
+        };
+        $('#time-start').datetimepicker(datetimepickerOptions);
+        $('#time-end').datetimepicker(datetimepickerOptions);
+        //時間範圍表單
+        var datetimepickerRange = {
+            locale: 'zh-tw',
+            //defaultDate: new Date(),
+            format: 'L',
+            allowMultidate: true,
+            multidateSeparator: '~',
+            icons: {
+                time: "bi bi-clock",
+                date: "bi bi-calendar",
+                up: "bi bi-arrow-up",
+                down: "bi bi-arrow-down",
+                previous: "bi bi-chevron-left",
+                next: "bi bi-chevron-right",
+                today: "bi bi-clock",
+                clear: "bi bi-trash3"
+            }
+        };
+        $('#time-range').datetimepicker(datetimepickerRange);
+        $('#time-range1').datetimepicker(datetimepickerRange);
+
+        var today1 = moment(); // 第一個今天的日期
+        var today2 = moment(); // 第二個今天的日期
+
+
+        //自動開啟完成視窗
+        const myModalEl = document.getElementById('done');
+        setTimeout(function () {
+            const bsModal = new bootstrap.Modal(myModalEl);
+            bsModal.show();
+        }, 2000);
+    });
+</script>
+<script>
+//行事曆設定
+    document.addEventListener('DOMContentLoaded', function () {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            locale: 'zh-tw',//中文設定
+            buttonText: {
+                today: '今天',
+                month: '月',
+                week: '周',
+                day: '日',
+            },
+            headerToolbar: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'dayGridMonth,dayGridWeek,dayGridDay'
+            },
+            initialDate: '2023-10-12',
+            navLinks: true, // can click day/week names to navigate views
+            editable: true,
+            dayMaxEvents: true, // allow "more" link when too many events
+            events: [
+                {
+                    title: '未開放預約',
+                    start: '2023-10-09T13:30:00',
+                    display: 'block',
+                    borderColor: '#746D6D',
+                    backgroundColor: '#746D6D'
+                },
+                {
+                    title: '已結束預約',
+                    start: '2023-10-03T20:30:00',
+                    display: 'block',
+                    borderColor: '#746D6D',
+                    backgroundColor: '#746D6D'
+                },
+                {
+                    title: '可預約',
+                    start: '2023-10-20T20:20:00',
+                    display: 'block',
+                    borderColor: '#057E01',
+                    backgroundColor: '#057E01',
+                    url: 'reservation-detail.html'
+                },
+                {
+                    title: '可預約',
+                    start: '2023-10-12T17:30:00',
+                    display: 'block',
+                    borderColor: 'green',
+                    backgroundColor: 'green',
+                    url: 'reservation-detail.html'
+                },
+                {
+                    title: '未開放預約',
+                    start: '2023-10-20T20:30:00',
+                    display: 'block',
+                    borderColor: '#746D6D',
+                    backgroundColor: '#746D6D'
+                },
+                {
+                    title: '可預約',
+                    start: '2023-10-12T19:20:00',
+                    display: 'block',
+                    borderColor: '#057E01',
+                    backgroundColor: '#057E01',
+                    url: 'reservation-detail.html'
+                },
+                {
+                    title: '已額滿',
+                    start: '2023-10-12T18:00:00',
+                    display: 'block',
+                    borderColor: '#DB0909',
+                    backgroundColor: '#DB0909'
+                },
+                 {
+                    title: '可預約',
+                    start: '2023-10-12T21:20:00',
+                    display: 'block',
+                    borderColor: '#057E01',
+                    backgroundColor: '#057E01',
+                    url: 'reservation-detail.html'
+                },
+                {
+                    title: '已額滿',
+                    start: '2023-10-13T09:00:00',
+                    display: 'block',
+                    borderColor: '#DB0909',
+                    backgroundColor: '#DB0909'
+                },
+                {
+                    title: '可預約',
+                    start: '2023-10-15T17:30:00',
+                    display: 'block',
+                    borderColor: 'green',
+                    backgroundColor: 'green',
+                    url: 'reservation-detail.html'
+                }
+            ],
+            eventColor: '#378006'
+        });
+
+        calendar.render();
+        $(".js-calendar").find("a").attr("title","看更多");
+    });
+
+</script>
+	</body>
+
+</html>
