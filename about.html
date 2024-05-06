@@ -465,6 +465,15 @@
             $('#farmer-slide').carousel('next');
         }
     });
+    $('#farmer-slide-article').on('slide.bs.carousel', function (e) {
+    const direction = e.direction; // 'left' or 'right'
+    const relatedIndex = e.to; // 获取要滑动到的幻灯片索引
+
+    console.log("Farmer Slide Article Sliding:", direction, relatedIndex);
+
+    // 根据滑动方向或目标索引，同步另一个轮播组件
+    $('#farmer-slide').carousel(relatedIndex);
+});
     //全站大圖設定
     function showbox_open() {
             window.scrollTo(0, 0);

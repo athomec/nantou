@@ -24071,6 +24071,8 @@ input[readonly] {
   background-size: cover;
   padding-top: 150px;
   margin-bottom: 0; }
+  .section[data-con="farmer"] .carousel-inner {
+    pointer-events: none; }
   .section[data-con="farmer"] .section-header {
     margin-bottom: -32px;
     display: -webkit-box;
