@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27" viewBox="0 0 27 27">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_28" data-name="Rectangle 28" width="11.844" height="17.817" transform="translate(0 0)" fill="#399d26"/>
+    </clipPath>
+  </defs>
+  <g id="ic-title-leaf" transform="translate(-5880 167)">
+    <g id="Group_547" data-name="Group 547" transform="translate(5903.782 -151.229) rotate(146)">
+      <g id="Group_27" data-name="Group 27" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="Path_36" data-name="Path 36" d="M5.96,13.92a9.257,9.257,0,0,1-3.136-3.394c-.706-1.59-.577-3.456-.7-5.224S1.446,1.562,0,.818a11.756,11.756,0,0,1,4.212-.8A6.509,6.509,0,0,1,7.493.5,7.254,7.254,0,0,1,9.941,2.935C11.142,4.65,12.225,6.8,11.714,8.9a12.279,12.279,0,0,1-.722,1.859,15.234,15.234,0,0,0-.628,2.5c-.206.885-.636,1.619-.862,2.48a4.57,4.57,0,0,0,.112,2.083A7.818,7.818,0,0,0,7.99,15.461c-.634-.543-1.366-1.033-2.03-1.541" transform="translate(0 0)" fill="#399d26"/>
+      </g>
+    </g>
+    <rect id="Rectangle_394" data-name="Rectangle 394" width="27" height="27" transform="translate(5880 -167)" fill="none"/>
+  </g>
+</svg>
