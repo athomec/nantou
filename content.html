@@ -43,12 +43,12 @@
                         <a class="nav-link" href="#" title="網頁導覽">網頁導覽</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" title="會員專區" class="nav-link d-flex "
+                        <a href="#" title="會員專區" class="nav-link d-flex d-none"
                             data-bs-toggle="collapse">
                             <img src="./assets/images/ic-user.svg" alt="會員專區" class="me-1">
                             <p>會員註冊/登入</p>
                         </a>
-                        <div class="nav-link d-none">
+                        <div class="nav-link ">
                             <img src="./assets/images/ic-user.svg" alt="會員專區" class="me-1">
                             <p class="me-2 me-xl-3">agnvke125，您好</p>
                             <a class="link-primary ms-auto" href="#" title="登出" data-con="logout">登出</a>
@@ -254,11 +254,11 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" title="會員專區" class="nav-link d-flex " data-bs-toggle="collapse">
+                    <a href="#" title="會員專區" class="nav-link d-flex d-none" data-bs-toggle="collapse">
                         <img src="./assets/images/ic-user.svg" alt="會員專區" class="me-1">
                         <p>會員註冊/登入</p>
                     </a>
-                    <div class="nav-link d-none">
+                    <div class="nav-link ">
                         <img src="./assets/images/ic-user.svg" alt="會員專區" class="me-1">
                         <p class="me-2 me-xl-3">agnvke125，您好</p>
                         <a class="link-primary ms-auto" href="#" title="登出" data-con="logout">登出</a>
@@ -276,316 +276,159 @@
 				<a href="#Accesskey_C" class="key position-absolute" id="Accesskey_C" accesskey="C"
 					title="網頁主要內容資料區">:::</a>					
 				<!--內容區塊開始-->
-<main class="main bg-white">
-	<div id="main-slide" class="main-slide carousel slide container-fluid">
-		<img src="./assets/images/scroll-down.svg" alt="scroll-down" class="main-slide-scroll">
-		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#main-slide" data-bs-slide-to="0" class="active" title="Slide 1">Slide
-				1</button>
-			<button type="button" data-bs-target="#main-slide" data-bs-slide-to="1" title="Slide 2">Slide 2</button>
-			<button type="button" data-bs-target="#main-slide" data-bs-slide-to="2" title="Slide 3">Slide 3</button>
-		</div>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="./assets/images/banner1.jpg" class="d-block w-100" alt="banner1">
-			</div>
-			<div class="carousel-item">
-				<img src="./assets/images/banner1.jpg" class="d-block w-100" alt="banner1">
-			</div>
-			<div class="carousel-item">
-				<img src="./assets/images/banner1.jpg" class="d-block w-100" alt="banner1">
-			</div>
-		</div>
-		<button class="carousel-control-prev slide-btn" type="button" data-bs-target="#main-slide" data-bs-slide="prev"
-			title="下一張">
-			<img src="./assets/images/ic-prev.svg" alt="prev">
-		</button>
-		<button class="carousel-control-next slide-btn" type="button" data-bs-target="#main-slide" data-bs-slide="next"
-			title="下一張">
-			<img src="./assets/images/ic-next.svg" alt="next">
-		</button>
+<main class="main bg-white" data-con="content">
+	<div class="main-header">
+		<h2 class="main-header-title">內容範本</h2>
 	</div>
 
-	<div class="marquee container-fluid">
-		<img src="./assets/images/ic-speaker.svg" alt="圖示" class="me-3 me-lg-4">
-		<div class="marquee-container px-3 py-1 py-lg-2">
-			<div class="marquee-content">
-				氣候變遷衝擊下，極端溫度事件導致民眾受熱傷害危害極深，讓我們瞭解氣候變遷對人體影響、熱傷害種類、成因及常見症狀，預防熱傷害發生吧！
-			</div>
-		</div>
+	<div class="container-fluid border-bottom border-gray-300">
+		<ol class="breadcrumb mb-0">
+			<li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link" title="首頁">首頁</a></li>
+			<li class="breadcrumb-item active">內容範本</li>
+		</ol>
 	</div>
 
-	<div class="section pt-4 pt-lg-6 mb-6" data-con="news">
+	<div class="section pt-4 pt-lg-6 mb-6" data-con="content">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 d-flex flex-column align-items-center">
-					<h2 class="section-title mb-4">
-						<p>最新資訊</p><span>NEWS</span>
-					</h2>
-					<img src="./assets/images/news-pic.png" alt="最新資訊" class="section-pic">
+			<div class="row gy-5 gx-xl-5">
+				<div class="col-md-4 col-xl-5">
+					<div class="section-pic">
+						<img src="./assets/images/content-p1.jpg" alt="照片">
+					</div>
 				</div>
-				<div class="col-lg-9">
-					<ul class="tag-list mb-3">
-						<li class="tag-list-item">
-							<a href="#" class="tag-list-link" title="為防治嚴重特殊傳染性肺炎，參加集會活動請全程佩戴口罩並遵守飲食規定">
-								<span>2024.10.10</span>
-								<p>為防治嚴重特殊傳染性肺炎，參加集會活動請全程佩戴口罩並遵守飲食規定</p>
-								<div class="tag-list-go"><img src="./assets/images/ic-next.svg" alt="點選圖示"></div>
+				<div class="col-md-8 col-xl-7">
+					<h3 class="section-title letter-spacing mb-4">農業永續發展</h3>
+					<p>聯絡窗口：(04)-28763233 連小姐</p>
+					<p class="mb-4">報名網站：<a href="https://reurl.cc/NQXr2Q" target="_blank" title="報名網站(開新視窗)"
+							class="link-tertiary-dark fw-bold">https://reurl.cc/NQXr2Q</a></p>
+					<div class="d-flex fw-medium mb-5">
+						<p class="me-2">座標</p>
+						<div class="d-inline-block rounded-pill bg-primary-xlight px-2"><span
+								class="text-primary fw-semibold me-3">X</span>156563.56</div>
+						<span class="px-2">,</span>
+						<div class="d-inline-block rounded-pill bg-primary-xlight px-2"><span
+								class="text-primary fw-semibold me-3">Y</span>156563.56</div>
+					</div>
+					<h4 class="section-subtitle"><img src="./assets/images/ic-title-leaf.svg" alt="icon">課程介紹</h4>
+					<p class="mb-4">
+						農業永續發展課程旨在探討如何在現代農業中實現經濟、社會和環境的平衡，以確保未來世代的食品安全、農村發展和環境保護。通過本課程，學生將了解農業永續發展的重要性、原則和實踐方法，並探索可持續農業模式的應用和創新。
+					</p>
+					<div class="row popup-gallery gy-3">
+						<div class="col-6 col-sm-3">
+							<a href="./assets/images/content-p3.jpg" class="section-thumb basic-shadow is-large" title="開啟大圖">
+								<div class="section-thumb-icon">
+									<img src="./assets/images/ic-zoom.svg" alt="icon">
+								</div>
+								<img src="./assets/images/content-p3.jpg" alt="照片">
+							</a>
+						</div>
+						<div class="col-6 col-sm-3">
+							<a href="./assets/images/content-p3.jpg" class="section-thumb basic-shadow is-large" title="開啟大圖">
+								<div class="section-thumb-icon">
+									<img src="./assets/images/ic-zoom.svg" alt="icon">
+								</div>
+								<img src="./assets/images/content-p3.jpg" alt="照片">
+							</a>
+						</div>
+						<div class="col-6 col-sm-3">
+							<a href="./assets/images/content-p3.jpg" class="section-thumb basic-shadow is-large" title="開啟大圖">
+								<div class="section-thumb-icon">
+									<img src="./assets/images/ic-zoom.svg" alt="icon">
+								</div>
+								<img src="./assets/images/content-p3.jpg" alt="照片">
+							</a>
+						</div>
+						<div class="col-6 col-sm-3">
+							<a href="./assets/images/content-p3.jpg" class="section-thumb basic-shadow is-large" title="開啟大圖">
+								<div class="section-thumb-icon">
+									<img src="./assets/images/ic-zoom.svg" alt="icon">
+								</div>
+								<img src="./assets/images/content-p3.jpg" alt="照片">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xl-5">
+					<a href="#" title="播放影片(開新視窗)" class="section-video" data-bs-toggle="modal" data-bs-target="#content_video">
+						<div class="section-video-action">
+							<p class="section-txt rounded-pill shadow-sm ps-3 pe-5 py-1 bg-white">VIDEO</p>
+							<div class="section-video-play shadow-sm">
+								<img src="./assets/images/ic-play.svg" alt="播放" class="ms-1">
+							</div>
+						</div>
+						<img src="./assets/images/content-p2.jpg" alt="影片" class="w-100">
+					</a>
+				</div>
+				<div class="col-md-8 col-xl-7">
+					<h4 class="section-subtitle"><img src="./assets/images/ic-title-leaf.svg" alt="icon">外部連結</h4>
+					<ul class="section-link">
+						<li class="section-link-item">
+							<a href="#" target="_blank" class="section-link-link" title="Facebook(開新視窗)">
+								<img src="./assets/images/ic-fb-black.svg" alt="Facebook icon">Facebook
 							</a>
 						</li>
-						<li class="tag-list-item">
-							<a href="#" class="tag-list-link" title="為防治嚴重特殊傳染性肺炎，參加集會活動請全程佩戴口罩並遵守飲食規定">
-								<span>2024.10.10</span>
-								<p>為防治嚴重特殊傳染性肺炎，參加集會活動請全程佩戴口罩並遵守飲食規定</p>
-								<div class="tag-list-go"><img src="./assets/images/ic-next.svg" alt="點選圖示"></div>
+						<li class="section-link-item">
+							<a href="#" target="_blank" class="section-link-link" title="Instagram(開新視窗)">
+								<img src="./assets/images/ic-ig-black.svg" alt="Instagram icon">Instagram
 							</a>
 						</li>
-						<li class="tag-list-item">
-							<a href="#" class="tag-list-link" title="為防治嚴重特殊傳染性肺炎，參加集會活動請全程佩戴口罩並遵守飲食規定">
-								<span>2024.10.10</span>
-								<p>為防治嚴重特殊傳染性肺炎，參加集會活動請全程佩戴口罩並遵守飲食規定</p>
-								<div class="tag-list-go"><img src="./assets/images/ic-next.svg" alt="點選圖示"></div>
+						<li class="section-link-item">
+							<a href="#" target="_blank" class="section-link-link" title="LINE(開新視窗)">
+								<img src="./assets/images/ic-line-black.svg" alt="LINE icon">LINE
 							</a>
 						</li>
-						<li class="tag-list-item">
-							<a href="#" class="tag-list-link" title="為防治嚴重特殊傳染性肺炎，參加集會活動請全程佩戴口罩並遵守飲食規定">
-								<span>2024.10.10</span>
-								<p>為防治嚴重特殊傳染性肺炎，參加集會活動請全程佩戴口罩並遵守飲食規定</p>
-								<div class="tag-list-go"><img src="./assets/images/ic-next.svg" alt="點選圖示"></div>
-							</a>
-						</li>
-						<li class="tag-list-item">
-							<a href="#" class="tag-list-link" title="為防治嚴重特殊傳染性肺炎，參加集會活動請全程佩戴口罩並遵守飲食規定">
-								<span>2024.10.10</span>
-								<p>為防治嚴重特殊傳染性肺炎，參加集會活動請全程佩戴口罩並遵守飲食規定</p>
-								<div class="tag-list-go"><img src="./assets/images/ic-next.svg" alt="點選圖示"></div>
+						<li class="section-link-item">
+							<a href="#" target="_blank" class="section-link-link" title="其他(開新視窗)">
+								<img src="./assets/images/ic-others-black.svg" alt="其他 icon">其他
 							</a>
 						</li>
 					</ul>
-					<a href="#" class="more-link" title="more">more</a>
+				</div>
+				<div class="col-md-4 col-xl-5">
+					<div class="section-map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116751.93007314739!2d120.84785990290499!3d23.87195996967132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468d604928dc951%3A0xe5f542671c481d02!2z5pel5pyI5r2t5aSn6aOv5bqX!5e0!3m2!1szh-TW!2stw!4v1714974139369!5m2!1szh-TW!2stw"
+							width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade" title="地圖"></iframe>
+					</div>
+				</div>
+				<div class="col-md-8 col-xl-7">
+					<div class="section-subheader mb-4">
+						<button class="btn btn-secondary d-flex align-items-center shadow-sm rounded-pill me-2"><img
+								src="./assets/images/ic-info.svg" alt="icon" class="me-2">商家資訊</button>
+						<a href="#" title="facebook(開新視窗)" class="link-img me-2"><img
+								src="./assets/images/ic-btn-fb.svg" alt="btn-facebook"></a>
+						<a href="#" title="ig(開新視窗)" class="link-img me-2"><img src="./assets/images/ic-btn-ig.svg"
+								alt="btn-ig"></a>
+						<a href="#" title="line(開新視窗)" class="link-img me-2"><img src="./assets/images/ic-btn-line.svg"
+								alt="btn-line"></a>
+					</div>
+					<h4 class="section-subtitle"><img src="./assets/images/ic-title-leaf.svg" alt="icon">營業時間</h4>
+					<p class="mb-5">
+						週一～週五 11:00～22:00 <br>
+						例假日等的營業時間：週六、週日及例假日 10:30～22:00
+					</p>
+					<h4 class="section-subtitle"><img src="./assets/images/ic-title-leaf.svg" alt="icon">青農(品牌)介紹</h4>
+					<p class="mb-5">
+						大湖米庄是南投縣埔里鎮的一家知名米店，擁有超過二十年的歷史。我們以生產高品質的在地米為宗旨，秉持著對於食材的堅持與熱情。我們的米穀來自於當地的農民，經過精挑細選，以嚴格的品質控管程序處理，確保每一粒米都是新鮮、美味、營養豐富的。我們深信，好的米食是家庭健康的基石，因此我們不斷努力，讓消費者品嚐到最好的在地美味。
+					</p>
+					<h4 class="section-subtitle"><img src="./assets/images/ic-title-leaf.svg" alt="icon">特色產品</h4>
+					<p class="mb-5">蓬萊米、芋香米</p>
+					<div class="d-flex justify-content-center">
+						<button class="btn btn-primary d-flex align-items-center rounded-pill text-white px-3 me-4">
+							<img src="./assets/images/ic-cart.svg" alt="icon" class="me-2">前往購買
+						</button>
+						<button class="btn btn-tertiary-xdark d-flex align-items-center rounded-pill text-white px-3">
+							<img src="./assets/images/ic-guide.svg" alt="icon" class="me-2">開始導航
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-
-	<section class="section container-fluid" data-con="bestseller">
-		<div class="container-fluid">
-			<div class="section-header">
-				<img src="./assets/images/leader-pic.jpg" alt="縣長照片" class="me-2">
-				<h2 class="section-title mb-5">
-					<p>縣長每月一推</p><span>BESTSELLER</span>
-				</h2>
-			</div>
-		</div>
-		<div class="theme-card g-4 js-theme-card">
-			<div>
-				<a href="#" class="theme-card-item" title="信手拈茶-茉莉綠茶袋茶">
-					<div class="theme-card-tag">
-						<div class="theme-card-locate"><img src="./assets/images/ic-locate.svg" alt="icon">草屯鎮</div>
-						<div class="theme-card-info">南投縣農會</div>
-					</div>
-					<div class="theme-card-img"><img src="./assets/images/demo-p1.jpg" alt="照片"></div>
-					<h3 class="theme-card-title">信手拈茶-茉莉綠茶袋茶</h3>
-					<p class="theme-card-txt">榮獲2018年南投十大伴手禮。
-						清逸的茶香與茉莉甜美的花香層次流轉，先於茶香中品嚐茉莉花散發出天然花香，茶引花香，花香中品嚐茶香茶韻先於茶香中品嚐，茶引花香，花香中品嚐茶香茶韻。</p>
-					<div class="more-link">more</div>
-				</a>
-			</div>
-			<div>
-				<a href="#" class="theme-card-item" title="信手拈茶-茉莉綠茶袋茶">
-					<div class="theme-card-tag">
-						<div class="theme-card-locate"><img src="./assets/images/ic-locate.svg" alt="icon">草屯鎮</div>
-						<div class="theme-card-info">南投縣農會</div>
-					</div>
-					<div class="theme-card-img"><img src="./assets/images/demo-p1.jpg" alt="照片"></div>
-					<h3 class="theme-card-title">信手拈茶-茉莉綠茶袋茶</h3>
-					<p class="theme-card-txt">榮獲2018年南投十大伴手禮。
-						清逸的茶香與茉莉甜美的花香層次流轉，先於茶香中品嚐茉莉花散發出天然花香，茶引花香，花香中品嚐茶香茶韻先於茶香中品嚐，茶引花香，花香中品嚐茶香茶韻。</p>
-					<div class="more-link">more</div>
-				</a>
-			</div>
-			<div>
-				<a href="#" class="theme-card-item" title="信手拈茶-茉莉綠茶袋茶">
-					<div class="theme-card-tag">
-						<div class="theme-card-locate"><img src="./assets/images/ic-locate.svg" alt="icon">草屯鎮</div>
-						<div class="theme-card-info">好穗成雙農產品初級 加工場</div>
-					</div>
-					<div class="theme-card-img"><img src="./assets/images/demo-p1.jpg" alt="照片"></div>
-					<h3 class="theme-card-title">信手拈茶-茉莉綠茶袋茶</h3>
-					<p class="theme-card-txt">榮獲2018年南投十大伴手禮。
-						清逸的茶香與茉莉甜美的花香層次流轉，先於茶香中品嚐茉莉花散發出天然花香，茶引花香，花香中品嚐茶香茶韻先於茶香中品嚐，茶引花香，花香中品嚐茶香茶韻。</p>
-					<div class="more-link">more</div>
-				</a>
-			</div>
-			<div>
-				<a href="#" class="theme-card-item" title="信手拈茶-茉莉綠茶袋茶">
-					<div class="theme-card-tag">
-						<div class="theme-card-locate"><img src="./assets/images/ic-locate.svg" alt="icon">草屯鎮</div>
-						<div class="theme-card-info">南投縣農會</div>
-					</div>
-					<div class="theme-card-img"><img src="./assets/images/demo-p1.jpg" alt="照片"></div>
-					<h3 class="theme-card-title">信手拈茶-茉莉綠茶袋茶</h3>
-					<p class="theme-card-txt">榮獲2018年南投十大伴手禮。
-						清逸的茶香與茉莉甜美的花香層次流轉，先於茶香中品嚐茉莉花散發出天然花香，茶引花香，花香中品嚐茶香茶韻先於茶香中品嚐，茶引花香，花香中品嚐茶香茶韻。</p>
-					<div class="more-link">more</div>
-				</a>
-			</div>
-			<div>
-				<a href="#" class="theme-card-item" title="信手拈茶-茉莉綠茶袋茶">
-					<div class="theme-card-tag">
-						<div class="theme-card-locate"><img src="./assets/images/ic-locate.svg" alt="icon">草屯鎮</div>
-						<div class="theme-card-info">南投縣農會</div>
-					</div>
-					<div class="theme-card-img"><img src="./assets/images/demo-p1.jpg" alt="照片"></div>
-					<h3 class="theme-card-title">信手拈茶-茉莉綠茶袋茶</h3>
-					<p class="theme-card-txt">榮獲2018年南投十大伴手禮。
-						清逸的茶香與茉莉甜美的花香層次流轉，先於茶香中品嚐茉莉花散發出天然花香，茶引花香，花香中品嚐茶香茶韻先於茶香中品嚐，茶引花香，花香中品嚐茶香茶韻。</p>
-					<div class="more-link">more</div>
-				</a>
-			</div>
-			<div>
-				<a href="#" class="theme-card-item" title="信手拈茶-茉莉綠茶袋茶">
-					<div class="theme-card-tag">
-						<div class="theme-card-locate"><img src="./assets/images/ic-locate.svg" alt="icon">草屯鎮</div>
-						<div class="theme-card-info">南投縣農會</div>
-					</div>
-					<div class="theme-card-img"><img src="./assets/images/demo-p1.jpg" alt="照片"></div>
-					<h3 class="theme-card-title">信手拈茶-茉莉綠茶袋茶</h3>
-					<p class="theme-card-txt">榮獲2018年南投十大伴手禮。
-						清逸的茶香與茉莉甜美的花香層次流轉，先於茶香中品嚐茉莉花散發出天然花香，茶引花香，花香中品嚐茶香茶韻先於茶香中品嚐，茶引花香，花香中品嚐茶香茶韻。</p>
-					<div class="more-link">more</div>
-				</a>
-			</div>
-		</div>
-	</section>
-
-	<section class="section" data-con="farmer">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-7">
-					<div class="section-header">
-						<img src="./assets/images/farmer-pic.svg" alt="農夫圖" class="me-2">
-						<h2 class="section-title mb-5">
-							<p>青農榮耀</p><span>FARMER GLORY</span>
-						</h2>
-					</div>
-					<div class="farmer-inner">
-						<div id="farmer-slide-article">
-							<div class="carousel-inner mb-3">
-								<div class="carousel-item active">
-									<h3 class="farmer-inner-title">崇尚自然落實有機1</h3>
-									<p class="mb-2">
-										真桂自然農場為清華桂專業的生產園區，從育苗、栽種、採收、加工處理與清華桂系列商品的開發、運用及推廣皆具有高度的專業能力，除了投入心力栽培清華桂外，也致力於山胡椒(馬告)的栽培。威然建有150坪清華桂農產加工室，引進高壓水蒸氣萃取設備，成功的開發生產高純度及高品質的清華桂精油及純露；另安排體驗活動行程，讓遊客參加園區生態導覽、採收清華桂及精油萃取體驗，下次不妨和家人朋友預約來個芳香微旅行吧!
-									</p>
-									<a href="#" class="more-link" title="more">more</a>
-								</div>
-								<div class="carousel-item">
-									<h3 class="farmer-inner-title">崇尚自然落實有機2</h3>
-									<p class="mb-2">
-										真桂自然農場為清華桂專業的生產園區，從育苗、栽種、採收、加工處理與清華桂系列商品的開發、運用及推廣皆具有高度的專業能力，除了投入心力栽培清華桂外，也致力於山胡椒(馬告)的栽培。威然建有150坪清華桂農產加工室，引進高壓水蒸氣萃取設備，成功的開發生產高純度及高品質的清華桂精油及純露；另安排體驗活動行程，讓遊客參加園區生態導覽、採收清華桂及精油萃取體驗，下次不妨和家人朋友預約來個芳香微旅行吧!
-									</p>
-									<a href="#" class="more-link" title="more">more</a>
-								</div>
-								<div class="carousel-item">
-									<h3 class="farmer-inner-title">崇尚自然落實有機3</h3>
-									<p class="mb-2">
-										真桂自然農場為清華桂專業的生產園區，從育苗、栽種、採收、加工處理與清華桂系列商品的開發、運用及推廣皆具有高度的專業能力，除了投入心力栽培清華桂外，也致力於山胡椒(馬告)的栽培。威然建有150坪清華桂農產加工室，引進高壓水蒸氣萃取設備，成功的開發生產高純度及高品質的清華桂精油及純露；另安排體驗活動行程，讓遊客參加園區生態導覽、採收清華桂及精油萃取體驗，下次不妨和家人朋友預約來個芳香微旅行吧!
-									</p>
-									<a href="#" class="more-link" title="more">more</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-7 col-lg-5">
-					<div id="farmer-slide" class="farmer-slide main-slide carousel slide px-5 px-md-0">
-						<div class="carousel-inner basic-shadow mb-3">
-							<div class="carousel-item active">
-								<img src="./assets/images/farmer1.jpg" class="d-block w-100" alt="farmer1">
-							</div>
-							<div class="carousel-item">
-								<img src="./assets/images/farmer1.jpg" class="d-block w-100" alt="farmer2">
-							</div>
-							<div class="carousel-item">
-								<img src="./assets/images/farmer1.jpg" class="d-block w-100" alt="farmer3">
-							</div>
-						</div>
-						<div class="d-flex align-items-center justify-content-center">
-							<div class="carousel-indicators me-3">
-								<button type="button" data-bs-slide-to="0" class="multi-target-carousel active"
-									title="Slide 1" data-bs-target>Slide 1</button>
-								<button type="button" data-bs-slide-to="1" title="Slide 2" class="multi-target-carousel" data-bs-target>Slide 2</button>
-								<button type="button" data-bs-slide-to="2" title="Slide 3" class="multi-target-carousel" data-bs-target>Slide 3</button>
-							</div>
-							<button class="carousel-control-prev slide-btn me-3 multi-target-carousel" type="button"
-								data-bs-slide="prev" title="下一張">
-								<img src="./assets/images/ic-prev.svg" alt="prev">
-							</button>
-							<button class="carousel-control-next slide-btn multi-target-carousel" type="button"
-								data-bs-slide="next" title="下一張">
-								<img src="./assets/images/ic-next.svg" alt="next">
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="section" data-con="related">
-		<div class="container">
-			<h2 class="section-title">
-				<p>友站連結</p><span class="text-white">RELATED WEBSITES</span>
-			</h2>
-			<div class="related-card js-related-card">
-				<div>
-					<a href="#" target="_blank" class="related-card-item" title="鹿谷鄉農會(開新視窗)">
-						<img src="./assets/images/related1.jpg" alt="鹿谷鄉農會">
-					</a>
-				</div>
-				<div>
-					<a href="#" target="_blank" class="related-card-item" title="鹿谷鄉農會(開新視窗)">
-						<img src="./assets/images/related1.jpg" alt="鹿谷鄉農會">
-					</a>
-				</div>
-				<div>
-					<a href="#" target="_blank" class="related-card-item" title="鹿谷鄉農會(開新視窗)">
-						<img src="./assets/images/related1.jpg" alt="鹿谷鄉農會">
-					</a>
-				</div>
-				<div>
-					<a href="#" target="_blank" class="related-card-item" title="鹿谷鄉農會(開新視窗)">
-						<img src="./assets/images/related1.jpg" alt="鹿谷鄉農會">
-					</a>
-				</div>
-				<div>
-					<a href="#" target="_blank" class="related-card-item" title="鹿谷鄉農會(開新視窗)">
-						<img src="./assets/images/related1.jpg" alt="鹿谷鄉農會">
-					</a>
-				</div>
-				<div>
-					<a href="#" target="_blank" class="related-card-item" title="鹿谷鄉農會(開新視窗)">
-						<img src="./assets/images/related1.jpg" alt="鹿谷鄉農會">
-					</a>
-				</div>
-				<div>
-					<a href="#" target="_blank" class="related-card-item" title="鹿谷鄉農會(開新視窗)">
-						<img src="./assets/images/related1.jpg" alt="鹿谷鄉農會">
-					</a>
-				</div>
-				<div>
-					<a href="#" target="_blank" class="related-card-item" title="鹿谷鄉農會(開新視窗)">
-						<img src="./assets/images/related1.jpg" alt="鹿谷鄉農會">
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
 </main>
-
 					<!--footer開始-->
-<footer class="footer" data-con="">
+<footer class="footer" data-con="page">
     <div class="footer-function">
         <a href="#" title="回到上方" class="footer-function-link mb-2 mb-md-3" data-con="top">TOP</a>
         <a href="https://robot.kcg.gov.tw/wise/webchat/default/?t=oC56ls9rDQCvE6pSN%2B9i0w%3D%3D" target="_blank"
