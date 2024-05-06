@@ -23350,7 +23350,7 @@ input[readonly] {
       .nav-item-search {
         max-width: 100%; } }
     .nav-item-search input {
-      border-radius: 80px 0 0 80px;
+      border-radius: 80px 0 0 80px !important;
       background: #F5F8EC;
       -webkit-box-shadow: 0 2px 2px #dee2e6 inset !important;
               box-shadow: 0 2px 2px #dee2e6 inset !important;
