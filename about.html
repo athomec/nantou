@@ -143,7 +143,6 @@
     </div>
 </div>
 <!--關於影片-->
-<!-- Button trigger modal -->
   <!-- Modal -->
   <div class="modal fade" id="about_video" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -151,6 +150,29 @@
         <div class="modal-body">
             <div class="d-flex justify-content-end">
                 <button type="button" class="btn-close p-0 mb-2" data-bs-dismiss="modal" title="關閉">
+                    關閉
+                </button>
+            </div>
+            <div class="ratio ratio-16x9">
+                <!-- YouTube 视频嵌入 -->
+                <iframe
+                    src="https://www.youtube.com/embed/_HWzRP02tGs?autoplay=1&mute=1"
+                    title="YouTube video"
+                    allowfullscreen class="rounded-2 overflow-hidden">
+                </iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--範本影片-->
+  <!-- Modal -->
+  <div class="modal fade" id="content_video" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn-close p-0 mb-2" data-bs-dismiss="modal" title="關閉">關閉
                 </button>
             </div>
             <div class="ratio ratio-16x9">
@@ -166,6 +188,11 @@
     </div>
   </div>
 <!--照片大圖開始-->
+<div id="pop" class="mfp-hide">
+    <lable for="sname">用戶名</lable><input type="text" id="sname" name="ss" value="">
+    <hr>
+    <input type="button" value="關閉" id="pop_btn">
+  </div>
 <!--<div id="showpic">
     <a class="boxclose" id="boxclose" onclick="showbox_close();">
         <img src="./assets/images/ic-close-video.svg" alt="關閉"></a>
@@ -363,7 +390,7 @@
 <script src="assets/js/moment-with-locales.min.js"></script>
 <script src="assets/js/tempusdominus-bootstrap-4.js"></script>
 <script src="assets/js/select2.min.js"></script>
-<script src="assets/js/index.global.js"></script><!--行事曆-->
+<script src="assets/js/jquery.magnific-popup.js"></script><!--開大圖-->
 <script src="assets/js/script.js"></script><!--自訂-->
 <script>
     $(function () {
@@ -475,13 +502,11 @@
     $('#farmer-slide').carousel(relatedIndex);
 });
     //全站大圖設定
-    function showbox_open() {
-            window.scrollTo(0, 0);
-            document.getElementById('showpic').style.display = 'flex';
-        }
-    function showbox_close() {
-            document.getElementById('showpic').style.display = 'none';
-        }
+    $('#pop_btn').magnificPopup({
+  type: 'inline',         // 行內的類型，類比圖片的模式
+  closeBtnInside: true,   // 顯示關閉按鈕
+  closeOnBgClick: false  // 點擊遮罩透明背景關閉彈出層
+});
         //預約輪播
         RESIZE();
 
