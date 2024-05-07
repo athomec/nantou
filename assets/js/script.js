@@ -40,5 +40,22 @@ $(function () {//JS開頭
 		$(this).toggleClass("active");
 		$(".js-dropdown-menu").find("a").not(this).removeClass("active");
 	})
+	//---------------------側邊選單設定------------------------
+	$(".js-side-menu-toggler").click(function () {//側邊選單收合
+		$(".js-side-menu").toggleClass("close");
+	});
+	RESIZE();
+
+	function RESIZE() {
+		var WINDOW = $(window).width();
+		var WINDOWH = $(window).height();
+		if (WINDOW < 992) {
+			$('.js-side-menu').addClass("close");
+			$(".js-side-content").addClass("close");
+		}
+	}
+	$(window).resize(function () {
+		RESIZE();
+	})
 
 })//JS尾端	
