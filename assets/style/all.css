@@ -23636,11 +23636,16 @@ input[readonly] {
   @media (max-width: 1200px) {
     .side-menu {
       width: 280px;
-      padding-left: 40px; } }
+      padding-left: 40px;
+      top: 120px; } }
   @media (max-width: 991px) {
     .side-menu {
       height: calc(100% - 70px);
       position: fixed; } }
+  @media (max-width: 768px) {
+    .side-menu {
+      top: 110px;
+      padding-left: 32px; } }
   @media (max-width: 576px) {
     .side-menu {
       height: calc(100% - 60px); } }
@@ -23660,16 +23665,22 @@ input[readonly] {
       left: -16px;
       bottom: -32px; }
     .side-menu-body .accordion {
-      padding: 80px 40px 100px 40px; }
+      padding: 72px 40px 96px 40px; }
       @media (max-width: 1200px) {
         .side-menu-body .accordion {
-          padding: 72px 24px 96px 24px; } }
+          padding: 40px 24px 56px 24px; } }
+      @media (max-width: 991px) {
+        .side-menu-body .accordion {
+          padding: 24px 24px 32px 24px; } }
   .side-menu-item {
     background: none;
     border: none;
     border-bottom: 1px solid #343a40;
     border-radius: 0 !important;
     margin-bottom: 24px; }
+    @media (max-width: 768px) {
+      .side-menu-item {
+        margin-bottom: 16px; } }
   .side-menu-btn {
     background: none !important;
     border: none !important;
@@ -23686,6 +23697,9 @@ input[readonly] {
     @media (max-width: 991px) {
       .side-menu-btn {
         font-size: 1rem; } }
+    @media (max-width: 768px) {
+      .side-menu-btn {
+        padding-top: 8px; } }
     .side-menu-btn:after {
       display: block;
       content: " ";
