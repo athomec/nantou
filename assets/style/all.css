@@ -24160,6 +24160,9 @@ input[readonly] {
       display: -ms-flexbox !important;
       display: flex !important; } }
 
+.farmer-slide .carousel-inner {
+  pointer-events: none; }
+
 .section[data-con="related"] {
   background: url(../images/related-bg.svg) no-repeat;
   background-size: 100%;
@@ -24560,15 +24563,19 @@ input[readonly] {
         font-size: 0.9rem; } }
   .theme-card .more-link {
     pointer-events: none; }
-  .theme-card .slick-prev:hover, .theme-card .slick-next:hover {
+  .theme-card .slick-prev:hover,
+  .theme-card .slick-next:hover {
     margin-top: -30px !important; }
     @media (max-width: 1550px) {
-      .theme-card .slick-prev:hover, .theme-card .slick-next:hover {
+      .theme-card .slick-prev:hover,
+      .theme-card .slick-next:hover {
         margin-top: -25px !important; } }
     @media (max-width: 768px) {
-      .theme-card .slick-prev:hover, .theme-card .slick-next:hover {
+      .theme-card .slick-prev:hover,
+      .theme-card .slick-next:hover {
         margin-top: -20px !important; } }
-  .theme-card .slick-prev:focus, .theme-card .slick-next:focus {
+  .theme-card .slick-prev:focus,
+  .theme-card .slick-next:focus {
     margin-top: 0; }
   @media (max-width: 1550px) {
     .theme-card .slick-prev {
