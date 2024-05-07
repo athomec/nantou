@@ -26505,7 +26505,6 @@ input[readonly] {
       -ms-flex-align: center;
           align-items: center; }
   .main-header-title {
-    font-weight: 300;
     font-size: 3rem;
     letter-spacing: 3px;
     color: #486149; }
