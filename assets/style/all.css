@@ -23636,7 +23636,7 @@ input[readonly] {
   @media (max-width: 1200px) {
     .side-menu {
       width: 280px;
-      padding-left: 40px;
+      padding-left: 32px;
       top: 120px; } }
   @media (max-width: 991px) {
     .side-menu {
@@ -23644,8 +23644,7 @@ input[readonly] {
       position: fixed; } }
   @media (max-width: 768px) {
     .side-menu {
-      top: 110px;
-      padding-left: 32px; } }
+      top: 110px; } }
   @media (max-width: 576px) {
     .side-menu {
       height: calc(100% - 60px); } }
@@ -26780,6 +26779,10 @@ input[readonly] {
   background-size: 100%;
   padding-bottom: 80px;
   margin-bottom: -30px; }
+  @media (max-width: 576px) {
+    .main[data-con="zone"] {
+      background: url("../images/zone-bg-sm.svg") no-repeat bottom;
+      background-size: 100%; } }
 
 .zone-intro-card {
   display: block;
@@ -26794,10 +26797,14 @@ input[readonly] {
       padding: 24px; } }
   @media (max-width: 576px) {
     .zone-intro-card {
-      padding: 12px;
       border-radius: 20px; } }
   .zone-intro-card:hover {
     background: #F9F5EB; }
+    .zone-intro-card:hover .more-link {
+      -webkit-transform: scale(1.02);
+          -ms-transform: scale(1.02);
+              transform: scale(1.02);
+      margin-left: 8px; }
   .zone-intro-card-title {
     text-align: center;
     width: 100%; }
@@ -26823,8 +26830,9 @@ input[readonly] {
         margin-right: 0; } }
     @media (max-width: 576px) {
       .zone-intro-card-img {
-        width: 100%;
-        font-size: 0.9rem; } }
+        width: 100px;
+        font-size: 0.9rem;
+        border-radius: 20px; } }
   .zone-intro-card-txt {
     line-height: 1.1;
     overflow: hidden;
@@ -26833,6 +26841,11 @@ input[readonly] {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5; }
+    @media (max-width: 576px) {
+      .zone-intro-card-txt {
+        font-size: 0.9rem; } }
+  .zone-intro-card .more-link {
+    pointer-events: none; }
 
 .zone-product-card {
   background: #f8f9fa;
@@ -26940,6 +26953,10 @@ input[readonly] {
   background-size: 100%;
   padding-bottom: 80px;
   margin-bottom: -30px; }
+  @media (max-width: 576px) {
+    .main[data-con="product"] {
+      background: url("../images/product-bg-sm.svg") no-repeat bottom;
+      background-size: 100%; } }
 
 .product-card-item {
   border-radius: 40px;
@@ -26957,7 +26974,8 @@ input[readonly] {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  cursor: pointer; }
   @media (max-width: 576px) {
     .product-card-nav-item {
       height: 90px;
@@ -27157,7 +27175,9 @@ input[readonly] {
             align-items: center;
     border-radius: 80px !important;
     color: #fff !important;
-    height: 38px; }
+    height: 38px;
+    position: relative !important;
+    z-index: 5 !important; }
     .page-search button img {
       margin-left: 4px;
       -webkit-filter: brightness(800);

@@ -52,6 +52,9 @@ $(function () {//JS開頭
 		if (WINDOW < 992) {
 			$('.js-side-menu').addClass("close");
 			$(".js-side-content").addClass("close");
+		}else{
+			$('.js-side-menu').removeClass("close");
+			$(".js-side-content").removeClass("close");
 		}
 	}
 	$(window).resize(function () {
