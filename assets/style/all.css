@@ -25850,32 +25850,45 @@ input[readonly] {
 
 /*-----------------表格樣式---------------------*/
 .table-rwd {
-  min-width: 100%; }
+  min-width: 100%;
+  -webkit-box-shadow: 0 2px 2px #ced4da;
+          box-shadow: 0 2px 2px #ced4da;
+  border: 1px solid #adb5bd; }
   @media (max-width: 991px) {
     .table-rwd {
       min-width: 90%;
-      margin: 0 auto; } }
-  .table-rwd tr {
-    border-bottom: 1px solid #F5F8EC; }
-    @media (max-width: 991px) {
-      .table-rwd tr {
-        border: 1px solid #399D26;
-        border-top: 8px solid #399D26; } }
+      margin: 0 auto;
+      border: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; } }
+  @media (max-width: 991px) {
+    .table-rwd tbody tr {
+      display: block;
+      border: 1px solid #FFD85F;
+      border-top: 8px solid #FFD85F;
+      margin-bottom: 24px;
+      -webkit-box-shadow: 0 2px 2px #ced4da;
+              box-shadow: 0 2px 2px #ced4da; } }
+  .table-rwd tbody tr:nth-child(even) td {
+    background: #F9F5EB; }
   .table-rwd th {
     display: table-cell;
-    background: #399D26;
-    color: #fff;
+    background: #FFD85F;
+    color: #212529;
     font-weight: normal;
     vertical-align: middle;
     font-size: 1rem;
-    padding: 8px; }
+    padding: 8px;
+    text-align: center; }
     @media (max-width: 991px) {
       .table-rwd th {
         display: none; } }
   .table-rwd td {
     display: table-cell;
     vertical-align: middle;
-    padding: 16px 8px; }
+    padding: 16px 8px;
+    text-align: center;
+    position: relative; }
     @media (max-width: 991px) {
       .table-rwd td {
         display: -webkit-box;
@@ -25897,6 +25910,8 @@ input[readonly] {
     @media (max-width: 991px) {
       .table-rwd td:last-child {
         padding-bottom: 16px !important; } }
+    .table-rwd td:last-child:after {
+      display: none; }
     .table-rwd td:before {
       display: none; }
       @media (max-width: 991px) {
@@ -25906,7 +25921,19 @@ input[readonly] {
           content: attr(data-th) "：";
           display: inline-block;
           color: #399D26;
-          font-weight: 500; } }
+          font-weight: 600; } }
+    .table-rwd td::after {
+      content: " ";
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 30px;
+      background: #ced4da;
+      top: calc(50% - 12px);
+      right: 0; }
+      @media (max-width: 991px) {
+        .table-rwd td::after {
+          display: none; } }
   .table-rwd a {
     color: #026EAE; }
     .table-rwd a:hover {
