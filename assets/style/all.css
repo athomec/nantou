@@ -24066,7 +24066,8 @@ input[readonly] {
         .footer-function-link {
           width: 48px;
           height: 48px;
-          bottom: 76px; } }
+          bottom: 76px;
+          font-size: 0.8rem; } }
       .footer-function-link:hover {
         background-color: #324433; }
   .footer-others {
