@@ -276,50 +276,140 @@
 				<a href="#Accesskey_C" class="key position-absolute" id="Accesskey_C" accesskey="C"
 					title="網頁主要內容資料區">:::</a>					
 				<!--內容區塊開始-->
-<main class="main bg-white">
+<main class="main bg-white" data-con="result">
+
+
     <div class="container-fluid border-bottom border-gray-300">
         <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link" title="首頁">首頁</a></li>
-            <li class="breadcrumb-item active">關於本網</li>
+            <li class="breadcrumb-item active">青農地圖</li>
         </ol>
     </div>
-
-	<section class="section pt-4 pt-4" data-con="about">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xl-5 col-xxl-4 d-flex flex-column justify-content-between position-relative">
-                    <div class="about-main"><img src="./assets/images/about-p1.jpg" alt="圖片"></div>
-					<img src="./assets/images/about-p2.svg" alt="圖片" class="about-man">
-				</div>
-				<div class="col-xl-7 col-xxl-5">
-                    <h2 class="about-title mt-4 mt-xl-5">
-                        南投尚青
-                    </h2>
-                    <p class="about-article">
-                        從南投縣的青青農田，傳來一陣勃勃生機。在這片土地上，有一群年輕的農夫，他們擁有著豐沛的熱情和對土地的深厚愛意。這群南投縣的青農朋友們，種植著獨特的農產品，培育著令人驚艷的農田風景。<br>
-                        將南投縣青農的農產品，推廣到全台灣，夢想著能夠讓更多的人認識到這片富饒的土地，品嚐到這裡獨特的農產美味。於是，誕生了「南投青農行銷暨導購平台」本平台。
-                        平台的目的為的就是將南投縣的青農們連結到更遠的地方。在平台的「初心故事」區域，我們分享了這個夢想的發源地，以及我們為什麼深信南投縣的農產品值得被更多人所喜愛。這不僅僅是一個行銷平台，更是一個承載著夢想和熱情的家園。<br>
-                        在這個平台上，您將發現每位青農的故事，了解他們的農耕心路歷程，以及他們如何獨特地栽培出每一份美味。這裡不僅僅是行銷推廣的場所，更是一個共融的社群，彙聚著熱愛農產的人們。<br>
-                        透過本平台，我們期許將南投縣的農產品送到每個家庭，讓更多人能夠品味到這片土地的豐收滋味。無論是山坡上的茶葉、谷間的水果，還是山川交錯間的農田，都蘊含著南投縣青農們的辛勤付出和愛心栽培。<br>
-                        本平台是一個夢想的起點，一個將農產品、文化和愛分享給全台灣的橋樑。讓我們攜手同行，將這份美好的味道，傳遞到每一個角落。
-
-                    </p>
-				</div>
-                <div class="col-xxl-3">
-                    <div class="about-function row gx-xl-4">
-                        <div class="col-5 col-sm-6 col-xxl-6 d-flex flex-column justify-content-center justify-content-md-end justify-content-xxl-center align-items-end align-items-xxl-start">
-                            <button class="btn rounded-pill mb-3" title="VIEDO" data-bs-toggle="modal" data-bs-target="#about_video">VIEDO</button>
-                            <img src="./assets/images/about-p3.jpg" alt="圖片" class="about-function-img">
-                        </div>
-                        <div class="col-5 col-md-6 col-xxl-6 d-flex flex-column flex-md-row flex-xxl-column align-items-start">
-                            <img src="./assets/images/about-p4.jpg" alt="圖片" class="about-function-img mb-2 mb-sm-3 me-4 me-xxl-0" data-position="end">
-                            <img src="./assets/images/about-p5.jpg" alt="圖片" class="about-function-img mb-4 mt-md-5 mt-xxl-0" data-position="end">
-                        </div>
+    <div class="d-flex">
+        <div class="side-menu js-side-menu">
+            <button class="btn btn-dark-primary-color side-menu-toggler js-side-menu-toggler d-lg-none p-1"
+                type="button" title="收合/展開選單">
+                <img src="./assets/images/ic-chevron_right.svg" alt="icon">
+            </button>
+            <div class="side-menu-body bg-primary-soft">
+                <div class="accordion scrollbar">
+                    <div class="accordion-item side-menu-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button btn side-menu-btn border-0 collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false">
+                                南投好米
+                            </button>
+                        </h2>
+                    </div>
+                    <div class="accordion-item side-menu-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button btn side-menu-btn collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false">
+                                南投好茶
+                            </button>
+                        </h2>
+                    </div>
+                    <div class="accordion-item side-menu-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button btn side-menu-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse3" aria-expanded="true">
+                                南投好密
+                            </button>
+                        </h2>
+                    </div>
+                    <div class="accordion-item side-menu-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button btn side-menu-btn collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false">
+                                南投好鮮
+                            </button>
+                        </h2>
+                    </div>
+                    <div class="accordion-item side-menu-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button btn side-menu-btn collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false">
+                                南投好物
+                            </button>
+                        </h2>
+                    </div>
+                    <div class="accordion-item side-menu-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button btn side-menu-btn collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false">
+                                南投好遊
+                            </button>
+                        </h2>
                     </div>
                 </div>
-			</div>
-		</div>
-	</section>
+            </div>
+        </div>
+        <section class="section side-content js-side-content mb-0" data-con="result">
+            <div class="container" style="max-width: 100%;">
+                <h2 class="section-title mb-5">青農成果錦集</h2>
+                <div class="row gy-4 g-sm-5 mb-5">
+                    <div class="col-sm-6 col-xl-4">
+                        <a href="result-detail.html" class="result-card" title="品牌名稱品牌名稱">
+                            <div class="result-card-wrapper">
+                                <h3 class="result-card-title">品牌名稱品牌名稱</h3>
+                                <div class="result-card-img"><img src="./assets/images/result-p1.jpg" alt="照片"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-xl-4">
+                        <a href="result-detail.html" class="result-card" title="品牌名稱品牌名稱">
+                            <div class="result-card-wrapper">
+                                <h3 class="result-card-title">品牌名稱品牌名稱</h3>
+                                <div class="result-card-img"><img src="./assets/images/result-p1.jpg" alt="照片"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-xl-4">
+                        <a href="result-detail.html" class="result-card" title="品牌名稱品牌名稱">
+                            <div class="result-card-wrapper">
+                                <h3 class="result-card-title">品牌名稱品牌名稱</h3>
+                                <div class="result-card-img"><img src="./assets/images/result-p1.jpg" alt="照片"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-xl-4">
+                        <a href="result-detail.html" class="result-card" title="品牌名稱品牌名稱">
+                            <div class="result-card-wrapper">
+                                <h3 class="result-card-title">品牌名稱品牌名稱</h3>
+                                <div class="result-card-img"><img src="./assets/images/result-p1.jpg" alt="照片"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-xl-4">
+                        <a href="result-detail.html" class="result-card" title="品牌名稱品牌名稱">
+                            <div class="result-card-wrapper">
+                                <h3 class="result-card-title">品牌名稱品牌名稱</h3>
+                                <div class="result-card-img"><img src="./assets/images/result-p1.jpg" alt="照片"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-xl-4">
+                        <a href="result-detail.html" class="result-card" title="品牌名稱品牌名稱">
+                            <div class="result-card-wrapper">
+                                <h3 class="result-card-title">品牌名稱品牌名稱</h3>
+                                <div class="result-card-img"><img src="./assets/images/result-p1.jpg" alt="照片"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="pagination-wrapper">
+                    <ul class="pagination">
+                        <li class="pagination-item" data-page="first"><a class="pagination-link" href="#" title="最前頁">«</a></li>
+                        <li class="pagination-item" data-page="prev"><a class="pagination-link" href="#" title="上一頁">‹</a></li>
+                        <li class="pagination-item" data-page="1"><a class="pagination-link active" href="#">1</a></li>
+                        <li class="pagination-item" data-page="2"><a class="pagination-link" href="#">2</a></li>
+                        <li class="pagination-item" data-page="next"><a class="pagination-link" href="#" title="下一頁">›</a></li>
+                        <li class="pagination-item" data-page="last"><a class="pagination-link" href="#" title="最後頁">»</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
 </main>
 					<!--footer開始-->
 <footer class="footer" data-con="page">
