@@ -27718,7 +27718,8 @@ input[readonly] {
     color: #399D26 !important;
     margin-right: 12px;
     font-size: 0.9rem;
-    line-height: 1; }
+    line-height: 1;
+    padding-top: 4px; }
     .result-detail-box .mfp-labels li:before {
       content: "#"; }
 
