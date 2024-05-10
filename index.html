@@ -66,7 +66,7 @@
             <div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-lg-5">
                 <h2 class="menu-list-title">青農報報</h2>
                 <ul>
-                    <li><a class="menu-list-link" href="content.html" title="簡介">內容範本</a></li>
+                    <li><a class="menu-list-link" href="#" title="簡介">簡介</a></li>
                     <li><a class="menu-list-link" href="#" title="聯絡資訊">聯絡資訊</a></li>
                 </ul>
             </div>
@@ -108,7 +108,7 @@
             <div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-lg-5">
                 <h2 class="menu-list-title">內容範本</h2>
                 <ul>
-                    <li><a class="menu-list-link" href="#" title="簡介">簡介</a></li>
+                    <li><a class="menu-list-link" href="content.html" title="簡介">簡介</a></li>
                     <li><a class="menu-list-link" href="#" title="聯絡資訊">聯絡資訊</a></li>
                 </ul>
             </div>
@@ -793,13 +793,19 @@
                 enabled: true,
                 navigateByImgClick: true,
                 preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
-            },
-            image: {
-                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-                titleSrc: function (item) {
-                    return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-                }
             }
+        });
+
+
+       $("body").on("click", ".js-result-gallery a", function () {
+            // 等待一小段时间以确保 .mfp-content 已生成
+            setTimeout(function () {
+                var mfpContent = $(".mfp-content");
+
+                if (mfpContent.length) {
+                    mfpContent.addClass("result-detail-box");
+                }
+            }, 100); // 100 毫秒延迟
         });
 
         //下拉輸入選單
