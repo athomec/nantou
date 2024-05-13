@@ -40,6 +40,18 @@ $(function () {//JS開頭
 		$(this).toggleClass("active");
 		$(".js-dropdown-menu").find("a").not(this).removeClass("active");
 	})
+	//下拉搜尋選單
+	
+	$(".dropdown").select2({
+		language: 'zh-TW',
+		width: '100%',
+		// 最多字元限制
+		maximumInputLength: 10,
+		// 最少字元才觸發尋找, 0 不指定
+		minimumInputLength: 0,
+		// 當找不到可以使用輸入的文字
+		tags: true,
+	});
 	//---------------------側邊選單設定------------------------
 	$(".js-side-menu-toggler").click(function () {//側邊選單收合
 		$(".js-side-menu").toggleClass("close");

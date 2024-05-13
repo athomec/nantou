@@ -14,6 +14,7 @@
     <!--分享設定-->
     <link rel="icon" href="assets/images/favicon.png" type="image/ico" />
     <!--iconfont設定-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/style/all.css">
     <!--css設定-->
 </head>
@@ -115,7 +116,7 @@
             <div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-lg-5">
                 <h2 class="menu-list-title">詢價單</h2>
                 <ul>
-                    <li><a class="menu-list-link" href="#" title="簡介">簡介</a></li>
+                    <li><a class="menu-list-link" href="form.html" title="簡介">簡介</a></li>
                     <li><a class="menu-list-link" href="#" title="聯絡資訊">聯絡資訊</a></li>
                 </ul>
             </div>
@@ -192,20 +193,6 @@
 <div id="pop" class="mfp-hide">
     <button type="button" value="關閉" id="pop_btn">關閉</button>
   </div>
-<!--<div id="showpic">
-    <a class="boxclose" id="boxclose" onclick="showbox_close();">
-        <img src="./assets/images/ic-close-video.svg" alt="關閉"></a>
-
-    <div class="loading">
-        頁面讀取中<br> 請稍候…
-        <img src="./assets/images/loading.png" alt="loading">
-    </div>
-
-    <div class="showpic-img">
-        <img src="./assets/images/demo-p1.jpg">
-    </div>
-</div>-->
-<!--照片大圖結束-->
 		<noscript>
 			<div class="container">
 				<div class="d-flex justify-content-center bg-gray-100 rounded p-4 text-primary border border-primary mt-6">
@@ -811,7 +798,7 @@
         //下拉輸入選單
         $('.js-input-select').select2();
 
-        //時間表單
+        //日期表單
         var datetimepickerOptions = {
             locale: 'zh-tw',
             defaultDate: new Date(),
@@ -827,9 +814,25 @@
                 clear: "bi bi-trash3"
             }
         };
-        $('#time-start').datetimepicker(datetimepickerOptions);
-        $('#time-end').datetimepicker(datetimepickerOptions);
-        //時間範圍表單
+        $('#newDate').datetimepicker(datetimepickerOptions);
+        //時間表單
+        var timepicker = {
+            locale: 'zh-tw',
+            defaultDate: new Date(),
+            format: 'LT',
+            icons: {
+                time: "bi bi-clock",
+                date: "bi bi-calendar",
+                up: "bi bi-arrow-up",
+                down: "bi bi-arrow-down",
+                previous: "bi bi-chevron-left",
+                next: "bi bi-chevron-right",
+                today: "bi bi-clock",
+                clear: "bi bi-trash3"
+            }
+        };
+        $('#newTime').datetimepicker(timepicker);
+        //日期範圍表單
         var datetimepickerRange = {
             locale: 'zh-tw',
             //defaultDate: new Date(),
@@ -848,7 +851,6 @@
             }
         };
         $('#time-range').datetimepicker(datetimepickerRange);
-        $('#time-range1').datetimepicker(datetimepickerRange);
 
         var today1 = moment(); // 第一個今天的日期
         var today2 = moment(); // 第二個今天的日期
