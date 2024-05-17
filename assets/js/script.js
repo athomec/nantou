@@ -52,6 +52,13 @@ $(function () {//JS開頭
 		// 當找不到可以使用輸入的文字
 		tags: true,
 	});
+	//內容範本
+	$('.section-pic-wrapper').each(function () {
+		var sectionPic = $(this).find('.section-pic');
+		if (sectionPic.find('img').length === 0) {
+			$(this).hide();
+		}
+	});
 	//---------------------側邊選單設定------------------------
 	$(".js-side-menu-toggler").click(function () {//側邊選單收合
 		$(".js-side-menu").toggleClass("close");
